@@ -19,7 +19,6 @@ verification_codes = {}
 
 @client.event
 async def on_member_join(member):
-    """ ユーザーがサーバーに参加したときの処理 """
     code = str(random.randint(100000, 999999))
     verification_codes[member.id] = code
 
